@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HOME</title>
+
+<link  type="text/css"  href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+<style type="text/css">
+
+</style>
+</head>
+<body style="background-color:#E6E6FA">
+
+  
+<center><h1>Movie Recommendation</h1>
+<p>Enter the ratings of the movies shown below ranging from 1-5.<br>Please enter the values in interger</p></center>
+
+
+
+
+<form method="POST" action="/prediction">
+  <table class="table table-bordered">
+    <tr>
+      <th>Movie Name</th>
+      <th>Summary</th>
+      <th>Ratings(Input)</th>
+    </tr>
+  {% for value in info %}
+  
+    <tr>
+    <td>
+    
+      <div><h4>{{value.Title}}</h4></div>
+     
+      <div><img src={{value.Thumbnail}} class="img-rounded" alt="Not found in database" width="70%" height="60%"></div>
+    </td>
+    
+    <td>{{value.Summary}}</td>
+    
+    <td><Input type="text" name = {{value.MovieId}} ></td>
+    </tr>
+  
+    
+    {% endfor %}
+    </table>
+  <br><br>
+  <center><input type="submit" class = "btn btn-warning btn-block" class="button" value="Recommend"></center> 
+</form>
+    
+  
+
+
+
+</body>

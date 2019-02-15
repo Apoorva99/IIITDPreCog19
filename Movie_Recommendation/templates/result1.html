@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Results</title>
+	<link  type="text/css"  href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+
+
+
+</style>
+</head>
+<body style="background-color:#E6E6FA">
+	
+<center><h1>Results</h1></center>
+
+		<table class="table table-bordered">
+			<tr>
+		      <th>Movie</th>
+		      <th>Summary</th>
+		    </tr>
+		         {% for value in info%}
+		            <tr>
+		               <td width="30%"> 
+		               	<div>{{value.Title}}</div>
+		               	<div><b>IMDB Rating --> {{value.Rating}}</b></div>
+		               	<div><img src={{value.Thumbnail}} class="img-rounded" alt="Image Not found in the databse"  width="70%" height="60%"></div>
+		               </td>
+		               <td>{{value.Summary}}</td>
+		               
+
+		            </tr>
+         {% endfor %}
+      </table>
+
+</body>
+</html>

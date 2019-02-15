@@ -29,8 +29,8 @@ The data was scraped from IMDB website and uploaded on [mLab](https://mlab.com/)
 ## Dataset
 The dataset used is a subsample of original Movielens dataset containing data of about 780 movies.
 The datafiles include-
-* IIITDPreCog_movies - Title of movies mapped with movieId.
-* IIITDPreCog_ratings - movieId mapped with user ratings.
-* IIITDPreCog_IMDB_scraped - Scraped data from IMDB website containing Title,year of release, IMDB rating, thumbnail and Synopsis.
+* **IIITDPreCog_movies** - Title of movies mapped with movieId.
+* **IIITDPreCog_ratings** - movieId mapped with user ratings.
+* **IIITDPreCog_IMDB_scraped** - Scraped data from IMDB website containing Title,year of release, IMDB rating, thumbnail and Synopsis.
 
 

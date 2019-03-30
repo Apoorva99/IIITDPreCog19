@@ -20,7 +20,7 @@ python app.py
 
 * Web based application using Heroku by **User Based collaborative filtering** (https://movierecomm388.herokuapp.com/?fbclid=IwAR2V_f2cSfglqHSVNx3-pM9yrdVEju64SJ-AgyOml0WD1p2Q3x0uYrN0CFM).
 * The ipynb notebooks for **Matrix Factorization Method** and **Item based collaborative filtering** algorithms has been uploaded in Notebooks directory.
-* **The web application was only deployed for the standout performing technique of **User Based collaborative filtering. Only this technique was deployed on web based application since it provided best results.****
+* **The web application was only deployed for the standout performing technique of **User Based collaborative filtering.**
 
 ## Execution
 
